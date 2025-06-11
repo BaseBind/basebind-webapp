@@ -19,16 +19,16 @@ const components: { title: string; href: string; description: string }[] = [
         href: "/marketing-page",
         description: "Write some wavy here to get them to click.",
     },
-    {
-        title: "Marketing Page",
-        href: "/marketing-page",
-        description: "Write some wavy here to get them to click.",
-    },
-    {
-        title: "Marketing Page",
-        href: "/marketing-page",
-        description: "Write some wavy here to get them to click.",
-    },
+    // {
+    //     title: "Marketing Page",
+    //     href: "/marketing-page",
+    //     description: "Write some wavy here to get them to click.",
+    // },
+    // {
+    //     title: "Marketing Page",
+    //     href: "/marketing-page",
+    //     description: "Write some wavy here to get them to click.",
+    // },
 ];
 
 export default function NavBar() {

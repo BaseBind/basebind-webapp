@@ -26,9 +26,9 @@ export default function Footer() {
                         <div className="mt-8 space-y-4 lg:mt-0">
 
                             <div>
-                                <h3 className="text-2xl font-medium">This is a fake newsletter title</h3>
+                                <h3 className="text-2xl font-medium">Contact Us</h3>
                                 <p className="mt-4 max-w-lg  ">
-                                    This is not a real newsletter email input. This is for you to build upon
+                                    Everything we design, develop and deliver would not be possible without the help and ongoing support from our partners. If you wish to become our Partner - Contact us!
                                 </p>
                             </div>
                             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col border rounded-xl p-4 gap-3 mt-6 w-full">
@@ -87,7 +87,7 @@ export default function Footer() {
                                 </li>
                             </ul>
 
-                            <p className="mt-8 text-xs  ">&copy; 2024. SomeCompany LLC. All rights reserved.</p>
+                            <p className="mt-8 text-xs  ">&copy; 2025. BaseBind LLC. All rights reserved.</p>
                         </div>
                     </div>
                 </div>

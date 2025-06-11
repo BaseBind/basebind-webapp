@@ -7,10 +7,10 @@ export default function ProjectsPage() {
       <div className="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-2xl font-bold tracking-tight">
-            You have no projects
+            You have no books
           </h1>
           <p className="text-sm text-muted-foreground mb-3">
-            Projects will show when you start using Nextjs Starter Kit
+            Books will show when you start using BaseBind
           </p>
           <Button>Create Project</Button>
         </div>
