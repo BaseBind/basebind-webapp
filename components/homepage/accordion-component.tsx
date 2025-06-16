@@ -28,7 +28,7 @@ export function AccordionComponent() {
                 <AccordionItem value="item-3">
                     <AccordionTrigger><span className="font-medium">How do i publish my story?</span></AccordionTrigger>
                     <AccordionContent>
-                        <p>Write your story on our platform, then publish it. Your story's content is securely stored and recorded on blockchain to prove ownership.</p>
+                        <p>Write your story on our platform, then publish it. Your story&apos;s content is securely stored and recorded on blockchain to prove ownership.</p>
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
@@ -40,7 +40,7 @@ export function AccordionComponent() {
                 <AccordionItem value="item-5">
                     <AccordionTrigger><span className="font-medium">How do I pay for premium stories?</span></AccordionTrigger>
                     <AccordionContent>
-                        <p>You'll use your blockchain wallet to send tokens securely and transparently to the author via smart contracts.</p>
+                        <p>You&apos;ll use your blockchain wallet to send tokens securely and transparently to the author via smart contracts.</p>
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-6">
