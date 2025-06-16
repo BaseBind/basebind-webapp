@@ -1,21 +1,29 @@
-"use client"
+"use client";
 
-import ModeToggle from '@/components/mode-toggle'
-import { Button } from '@/components/ui/button'
-import { Dialog, DialogClose } from '@/components/ui/dialog'
-import { Separator } from '@/components/ui/separator'
-import { SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
-import { UserProfile } from '@/components/user-profile'
-import config from '@/config'
-import { HamburgerMenuIcon } from '@radix-ui/react-icons'
-import { Banknote, Folder, HomeIcon, Settings } from 'lucide-react'
-import Link from 'next/link'
-import { ReactNode } from 'react'
+import Link from "next/link";
+import { ReactNode } from "react";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { Banknote, Folder, HomeIcon, Settings } from "lucide-react";
+
+import ModeToggle from "@/components/mode-toggle";
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogClose } from "@/components/ui/dialog";
+import { Separator } from "@/components/ui/separator";
+import {
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { UserProfile } from "@/components/user-profile";
+import config from "@/config";
+
+import { WalletButton } from "@/app/thirdweb/walletButton";
 
 export default function DashboardTopNav({ children }: { children: ReactNode }) {
   return (
     <div className="flex flex-col">
-      <header className="flex h-14 lg:h-[55px] items-center gap-4 border-b px-3">
+      <header className="flex h-16 items-center gap-4 border-b p-2">
         <Dialog>
           <SheetTrigger className="min-[1024px]:hidden p-2 transition">
             <HamburgerMenuIcon />
@@ -68,10 +76,11 @@ export default function DashboardTopNav({ children }: { children: ReactNode }) {
         </Dialog>
         <div className="flex justify-center items-center gap-2 ml-auto">
           {config?.auth?.enabled && <UserProfile />}
+          <WalletButton />
           <ModeToggle />
         </div>
       </header>
       {children}
     </div>
-  )
+  );
 }
